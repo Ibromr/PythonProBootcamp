@@ -1,11 +1,3 @@
-print(len(input("What is your name?")))
-
-
-#PAUSE 2.
-
-username = input("What is your name?")
-length = len(username)
-print(length)
-
-#passed
-# I will continue
+print("Hello")
+brandName = input("What is the city that you grew up?" + "\n")+input("What is your pet name?" + "\n")
+print("your brand name: "+brandName)
