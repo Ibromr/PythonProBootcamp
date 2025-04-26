@@ -1,0 +1,41 @@
+Day 1
+
+NameError:
+Typographical errors: Misspelling a variable or function name.
+Undeclared variables: Using a variable without assigning a value to it first.
+Scope issues: Trying to access a variable defined within a specific scope
+(e.g., inside a function) from outside that scope.
+Incorrect module usage: Attempting to use a function or class from a module without importing it first.
+
+# Example 1: Typo
+my_variabe = 10
+print(my_varible) # NameError: name 'my_varible' is not defined
+
+# Example 2: Undeclared variable
+print(another_variable) # NameError: name 'another_variable' is not defined
+another_variable = 5
+
+# Example 3: Scope issue
+def my_function():
+    local_variable = "inside function"
+    print(local_variable)
+
+my_function()
+print(local_variable) # NameError: name 'local_variable' is not defined
+
+# Example 4: Missing import
+math.sqrt(25) # NameError: name 'math' is not defined
+import math
+math.sqrt(25)
+
+
+
+Day 2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+print(int("abc") + int("456"))
+ValueError: invalid literal for int() with base 10: 'abc'
+
+
+print("Your score is" +score)
+TypeError: can only concatenate str (not "int") to str
+
